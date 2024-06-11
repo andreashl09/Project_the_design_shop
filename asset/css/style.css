@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "karla";
+    src: url("../fonts/Karla/Karla-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "karla-italic";
+    src: url("../fonts/Karla/Karla-Italic-VariableFont_wght.ttf");
+}
+
 /* BASIC STYLING */
 
 * {
@@ -16,10 +25,56 @@ a {
 }
 
 .wrapper {
+    font-family: "karla", Arial, Helvetica, sans-serif;
+    padding: 40px 40px 0 40px;
 }
 
 /* ! HEADER */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navigation nav {
+    display: flex;
+    gap: 60px;
+    font-size: 10px;
+}
 
 /* ! MAIN */
+
+.compartment-product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "top-product top-product top-product"
+        "first-product second-product third-product"
+        "fourth-product fifth-product sixth-product";
+}
+
+.top-product {
+    grid-area: top-product;
+}
+
+.first-product {
+    grid-area: first-product;
+}
+.second-product {
+    grid-area: second-product;
+}
+.third-product {
+    grid-area: third-product;
+}
+.fourth-product {
+    grid-area: fourth-product;
+}
+.firth-product {
+    grid-area: fifth-product;
+}
+.fourthfourth-product {
+    grid-area: first-product;
+}
 
 /* ! FOOTER */
