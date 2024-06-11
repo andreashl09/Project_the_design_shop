@@ -17,6 +17,7 @@
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -52,6 +53,7 @@ a {
         "top-product top-product top-product"
         "first-product second-product third-product"
         "fourth-product fifth-product sixth-product";
+    gap: 20px;
 }
 
 .top-product {
@@ -77,4 +79,25 @@ a {
     grid-area: first-product;
 }
 
+.price::before {
+    content: "$";
+}
+
+.price::after {
+    content: ".00";
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    align-self: flex-end;
+    margin-top: -37px;
+}
+
+.compartment-product > section {
+    margin-bottom: 20px;
+}
 /* ! FOOTER */
