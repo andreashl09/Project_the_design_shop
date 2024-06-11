@@ -37,6 +37,7 @@ a {
     justify-content: space-between;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 .navigation nav {
     display: flex;
@@ -94,10 +95,65 @@ a {
 
 .price {
     align-self: flex-end;
-    margin-top: -37px;
+    margin-top: -35px;
+    font-size: 15px;
 }
 
 .compartment-product > section {
     margin-bottom: 20px;
 }
+
+section a img {
+    margin-bottom: 20px;
+}
+.product-name {
+    font-size: 15px;
+}
+
+.manufacturer {
+    font-size: 15px;
+    color: #848484;
+}
+
+section a div {
+    margin-bottom: 20px;
+}
+
 /* ! FOOTER */
+
+.footer-compartment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-compartment h5 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.footer-compartment p {
+    font-size: 12px;
+}
+
+.footer-compartment span {
+    font-weight: bold;
+}
+
+.italic-font {
+    font-family: karla-italic;
+}
+
+a {
+    font-size: 10px;
+    color: #323a45;
+}
+
+.shop {
+    flex-basis: 40%;
+}
+
+footer p:nth-last-child(1) {
+    font-size: 10px;
+    color: #848484;
+}
